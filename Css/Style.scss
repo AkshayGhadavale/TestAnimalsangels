@@ -1,0 +1,936 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+
+/*************Mixins Start************/
+
+@mixin Font-logo {
+
+    // font-family: "Courgette", cursive;
+    // font-weight: 400;
+    // font-style: normal;
+
+    font-family: "Shantell Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400p;
+    font-style: normal;
+    font-variation-settingsASDFGasdfg:
+        "BNCE" 0,
+        "INFM" 0,
+        "SPAC" 0;
+
+
+}
+
+
+@mixin disply-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*************Mixins End************/
+
+.slider{
+    display: none;
+}
+
+.Wrapper {
+    width: 100%;
+    height: 100vh;
+    background: #FCDC94;
+    // background: rgb(198,197,218);
+    // background: linear-gradient(90deg, rgba(198,197,218,1) 0%, rgba(92,226,189,1) 52%, rgba(59,185,210,1) 100%);
+
+
+
+    /*************HEader/Navbar START************/
+    .Header {
+        width: 100%;
+        height: 15%;
+        @include disply-flex-center;
+
+
+        .Navbar {
+            width: 90%;
+            height: 80%;
+            background: #EF9C66;
+            border-radius: 10px;
+            @include disply-flex-center;
+            box-shadow: 0 0 10px #0005;
+
+
+
+
+            backdrop-filter: blur(10px);
+            background-color: #fff2;
+
+            .Logosec {
+                width: 20%;
+                height: 100%;
+                @include disply-flex-center;
+
+                img {
+                    width: 100%;
+                    margin-left: 40px;
+                    height: 80%;
+                }
+
+                h2 {
+                    @include Font-logo;
+                    color: #f7f1ef;
+                }
+            }
+
+            .Navsec {
+                width: 80%;
+                height: 100%;
+                @include disply-flex-center;
+
+                .Navlist {
+                    @include disply-flex-center;
+                    justify-content: space-around;
+                    width: 70%;
+                    height: 100%;
+                    list-style: none;
+                    text-decoration: none;
+                    @include Font-logo;
+
+                    a {
+                        font-size: 1.3rem;
+
+                        color: #001f3f;
+                        text-decoration: none;
+                        font-weight: bolder;
+                    }
+                }
+            }
+        }
+    }
+
+    /*************HEader/Navbar  END************/
+
+    /*************First section  Start************/
+
+    .Firstsection {
+        width: 100%;
+        height: 85%;
+        @include disply-flex-center;
+
+        /*************left section  Start************/
+
+        .Leftsection {
+            width: 50%;
+            height: 100%;
+
+            @include disply-flex-center;
+            /*************mainsec************/
+
+
+            .main-textsec {
+
+                width: 80%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 20px;
+
+
+                h1 {
+                    margin-top: 30px;
+                    @include Font-logo;
+                    font-size: 5rem;
+                    font-weight: 800;
+                    color: rgb(255, 255, 255);
+                    text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+
+                    .anitext {
+                        text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+                    }
+
+                }
+
+                p {
+                    @include Font-logo;
+                    font-size: 1.5rem;
+                    color: rgb(0, 0, 0);
+                    margin-bottom: 20px;
+                }
+
+                /*****button code********/
+
+                /* CSS */
+
+                /* CSS */
+
+                .button-29 {
+                    background: #001f3f;
+                    border: 1px solid #001f3f;
+                    border-radius: 6px;
+                    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+                    box-sizing: border-box;
+                    color: #FFFFFF;
+                    cursor: pointer;
+                    display: inline-block;
+                    @include Font-logo;
+                    font-size: 20px;
+                    font-weight: 800;
+                    line-height: 16px;
+                    min-height: 40px;
+                    outline: 0;
+                    padding: 24px 29px;
+                    text-align: center;
+                    text-rendering: geometricprecision;
+                    text-transform: none;
+                    user-select: none;
+                    -webkit-user-select: none;
+                    touch-action: manipulation;
+                    vertical-align: middle;
+
+                    &:hover {
+                        background-color: initial;
+                        background-position: 0 0;
+                        color: #001f3f;
+                    }
+
+                    asdfg &:active {
+                        background-color: initial;
+                        background-position: 0 0;
+                        color: #001f3f;
+                        opacity: .5;
+                    }
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+                .button-5 {
+                    align-items: center;
+                    background-clip: padding-box;
+                    background-color: #fa6400;
+                    border: 1px solid transparent;
+                    border-radius: 0.25rem;
+                    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+                    box-sizing: border-box;
+                    color: #fff;
+                    cursor: pointer;
+                    display: inline-flex;
+                    @include Font-logo;
+                    font-size: 16px;
+                    font-weight: 600;
+                    justify-content: center;
+                    line-height: 1.25;
+                    margin: 0;
+                    min-height: 3rem;
+                    padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+                    position: relative;
+                    text-decoration: none;
+                    transition: all 250ms;
+                    user-select: none;
+                    -webkit-user-select: none;
+                    touch-action: manipulation;
+                    vertical-align: baseline;
+                    width: auto;
+                }
+
+
+
+                /*************end*****************/
+
+
+            }
+
+
+
+
+
+
+
+        }
+
+        /*************left section  End************/
+
+        .Rightsection {
+            width: 50%;
+            height: 100%;
+            @include disply-flex-center;
+
+            .imagesec {
+                width: 70%;
+                height: 80%;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+
+
+                .subimagesec {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    border-radius: 50%;
+
+                    -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px #f9f9f9;
+                    -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px #f9f9f9;
+                    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px #f9f9f9;
+
+
+                    -webkit-animation: animatebigbub 10s linear infinite, sideWays 4s ease-in-out infinite alternate;
+                    -moz-animation: animatebigbub 10s linear infinite, sideWays 4s ease-in-out infinite alternate;
+                    animation: animatebigbub 10s linear infinite, sideWays 4s ease-in-out infinite alternate;
+
+
+
+                }
+
+                :after {
+                    background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+                    /* FF3.6+ */
+                    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255, 255, 255, 0.5)), color-stop(70%, rgba(255, 255, 255, 0)));
+                    /* Chrome,Safari4+ */
+                    background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+                    /* Chrome10+,Safari5.1+ */
+                    background: -o-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+                    /* Opera 12+ */
+                    background: -ms-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+                    /* IE10+ */
+                    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+                    /* W3C */
+                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80ffffff', endColorstr='#00ffffff', GradientType=1);
+                    /* IE6-9 fallback on horizontal gradient */
+
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    border-radius: 50%;
+
+                    -webkit-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+                    -moz-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+                    box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+
+
+                }
+
+
+
+                img {
+                    width: 100%;
+                    height: 90%;
+
+                }
+
+                @keyframes animatebigbub {
+                    0% {
+                        left: 100px;
+                        top: 0px;
+                    }
+
+                    25% {
+                        left: 0px;
+                        bottom: asdfg100px;
+                    }
+
+                    50% {
+                        left: -100px;
+                        top: -100px;
+
+                    }
+
+                    75% {
+                        left: 0px;
+                        top: 0px;
+
+                    }
+
+                    100% {
+                        left: 100px;
+                        top: 0px;
+
+                    }
+
+                }
+
+
+
+            }
+
+
+
+        }
+
+    }
+
+    // .Cardssection {
+    //     width: 100%;
+    //     height: 100%;
+
+    //     @include disply-flex-center;
+    //     flex-direction: column;
+
+    //     .Firstrow {
+    //         width: 100%;
+    //     height: calc(100%/3);
+
+
+    //         display: flex;
+    //         gap: 20px;
+
+    //         .card {
+    //             width: calc(100%/3);
+    //             height: 100%;
+
+    //             figure {
+    //                 width: 100%;
+    //                 height: 100%;
+    //                 aspect-ratio: 8 / 5;
+    //                 --bg: hsl(330 80% calc(90% - (var(--hover) * 10%)));
+    //                 --accent: hsl(280 80% 40%);
+    //                 transition: background 0.2s;
+    //                 background:
+    //                     radial-gradient(circle at top left, var(--accent), transparent 75%),
+    //                     var(--bg);
+
+    //                 border-radius: 1.5rem;
+    //             }
+
+
+    //             img {
+
+    //                 height: 100%;
+    //                 height: 100%;
+
+
+    //             }
+
+    //             #my-img:hover {
+    //                 content: url('/Video/5263678-uhd-4096-2160-30fps-unscreen.gif');
+    //             }
+
+    //             article {
+    //                 --hover: 0;
+    //             }
+
+    //             article:hover {
+    //                 --hover: 1;
+    //             }
+
+
+
+    //         }
+
+
+
+
+
+
+    //     }
+
+    //     .Secondrow {
+    //         width: 100%;
+    //         height: calc(100%/3);
+
+
+    //         display: flex;
+
+    //         @extend .Firstrow
+    //     }
+
+    //     .Thirdrow {
+    //         width: 100%;
+    //         height: calc(100%/3);
+    //         @extend .Firstrow;
+
+
+    //         display: flex;
+
+
+    //     }
+
+    // }
+
+
+}
+
+
+/*************First section  End************/
+
+
+
+
+/*************Mobile  RESOISIVE   START************/
+
+
+@media only screen and (min-width: 360px) and (max-width: 640px) {
+    /* navbarsection  for mobile Start */
+
+
+    .slider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 0%;
+        height: 100vh;
+        background-color: black;
+        position: fixed;
+        right: -60%;
+        -webkit-transition: 2s;
+        -moz-transition: 2s;
+        -ms-transition: 2s;
+        -o-transition: 2s;
+        transition: 2s;
+        top: 0%;
+        z-index: 999;
+      }
+      
+      .changeslider {
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        position: fixed;
+        -webkit-transition: 2s;
+        -moz-transition: 2s;
+        -ms-transition: 2s;
+        -o-transition: 2s;
+        transition: 2s;
+        right: 30%;
+        top: 0%;
+        z-index: 999;
+      }
+      
+      .navlistmob {
+        height: 50%;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+      }
+      
+      .navcontain {
+        display: flex;
+        justify-content: flex-end;
+        width: 70%;
+        height: 100%;
+      }
+      
+      .navlistmob {
+        li {
+          text-decoration: none;
+          margin-top: 20px;
+      
+          img {
+            width: 60vw;
+          }
+        }
+      
+        a {
+          font-size: 30px;
+          text-decoration: none;
+          color: white;
+          font-weight: 500;
+        }
+      }
+      
+
+
+.Wrapper {
+    width: 100%;
+    height: 220vh;
+    background: #FCDC94;
+    // background: rgb(198,197,218);
+    // background: linear-gradient(90deg, rgba(198,197,218,1) 0%, rgba(92,226,189,1) 52%, rgba(59,185,210,1) 100%);
+
+
+    
+
+
+
+    /*************HEader/Navbar START************/
+    .Header {
+        width: 100%;
+        height: 10%;
+        @include disply-flex-center;
+
+
+        .Navbar {
+            width: 90%;
+            height: 80%;
+            background: #EF9C66;
+            border-radius: 10px;
+            @include disply-flex-center;
+            box-shadow: 0 0 10px #0005;
+
+justify-content: space-between;
+
+
+            backdrop-filter: blur(10px);
+            background-color: #fff2;
+
+            .container {
+                display: inline-block;
+                cursor: pointer;
+                padding-right: 10px;
+              }
+              
+              .bar1, .bar2, .bar3 {
+                width: 45px;
+                height: 6px;
+                background-color: #fffcfc;
+                margin: 8px 0;
+                transition: 0.4s;
+              }
+              
+              .change {
+                .bar1 {
+                  -webkit-transform: rotate(-45deg) translate(-10px, 8px);
+                  transform: rotate(-45deg) translate(-10px, 8px);
+                }
+              
+                .bar2 {
+                  opacity: 0;
+                }
+              
+                .bar3 {
+                  -webkit-transform: rotate(45deg) translate(-10px, -10px);
+                  transform: rotate(45deg) translate(-10px, -10px);
+                }
+              }
+              
+
+
+            
+
+            .Logosec {
+                width: 70%;
+                height: 100%;
+                @include disply-flex-center;
+
+                img {
+                    width: 100%;
+                    margin-left: 40px;  height: 80%;
+                }
+
+                h2 {
+                    @include Font-logo;
+                    color: #f7f1ef;
+                }
+            }
+
+            .Navsec {
+                width: 80%;
+                height: 100%;
+                @include disply-flex-center;
+display: none;
+                .Navlist {
+                    @include disply-flex-center;
+                    justify-content: space-around;
+                    width: 70%;
+                    height: 100%;
+                    list-style: none;
+                    text-decoration: none;
+                    @include Font-logo;
+
+                    a {
+                        font-size: 1.3rem;
+
+                        color: #001f3f;
+                        text-decoration: none;
+                        font-weight: bolder;
+                    }
+                }
+            }
+        }
+    }
+
+    /*************HEader/Navbar  END************/
+
+    /*************First section  Start************/
+    
+
+    .Firstsection {
+        width: 100%;
+        height: 90%;
+        @include disply-flex-center;
+        flex-direction: column-reverse;
+
+        /*************left section  Start************/
+
+        .Leftsection {
+            width: 100%;
+            height: 60%;
+
+            @include disply-flex-center;
+            /*************mainsec************/
+
+
+            .main-textsec {
+
+                width: 80%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 20px;
+
+
+                h1 {
+                    text-align: center;
+                    margin-top: 10px;
+                    @include Font-logo;
+                    font-size: 3.5rem;
+                    font-weight: 800;
+                    color: rgb(255, 255, 255);
+                    text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+
+                    .anitext {
+                        text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+                    }
+
+                }
+
+                p {
+                    @include Font-logo;
+                    font-size: 1.5rem;
+                    color: rgb(0, 0, 0);
+                    margin-bottom: 20px;
+                }
+
+                /*****button code********/
+
+                /* CSS */
+
+                /* CSS */
+
+                .button-29 {
+                    background: #001f3f;
+                    border: 1px solid #001f3f;
+                    border-radius: 6px;
+                    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+                    box-sizing: border-box;
+                    color: #FFFFFF;
+                    cursor: pointer;
+                    display: inline-block;
+                    @include Font-logo;
+                    font-size: 20px;
+                    font-weight: 800;
+                    line-height: 16px;
+                    min-height: 40px;
+                    outline: 0;
+                    padding: 24px 29px;
+                    text-align: center;
+                    text-rendering: geometricprecision;
+                    text-transform: none;
+                    user-select: none;
+                    -webkit-user-select: none;
+                    touch-action: manipulation;
+                    vertical-align: middle;
+
+                    &:hover {
+                        background-color: initial;
+                        background-position: 0 0;
+                        color: #001f3f;
+                    }
+
+                    asdfg &:active {
+                        background-color: initial;
+                        background-position: 0 0;
+                        color: #001f3f;
+                        opacity: .5;
+                    }
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+                .button-5 {
+                    align-items: center;
+                    background-clip: padding-box;
+                    background-color: #fa6400;
+                    border: 1px solid transparent;
+                    border-radius: 0.25rem;
+                    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+                    box-sizing: border-box;
+                    color: #fff;
+                    cursor: pointer;
+                    display: inline-flex;
+                    @include Font-logo;
+                    font-size: 16px;
+                    font-weight: 600;
+                    justify-content: center;
+                    line-height: 1.25;
+                    margin: 0;
+                    min-height: 3rem;
+                    padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+                    position: relative;
+                    text-decoration: none;
+                    transition: all 250ms;
+                    user-select: none;
+                    -webkit-user-select: none;
+                    touch-action: manipulation;
+                    vertical-align: baseline;
+                    width: auto;
+                }
+
+
+
+                /*************end*****************/
+
+
+            }
+
+
+
+
+
+
+
+        }
+
+        /*************left section  End************/
+
+        .Rightsection {
+            width: 100%;
+            height: 40%;
+            @include disply-flex-center;
+
+            .imagesec {
+                width: 90%;
+                height: 70%;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+
+
+                .subimagesec {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    border-radius: 50%;
+
+                    -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px #f9f9f9;
+                    -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px #f9f9f9;
+                    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px #f9f9f9;
+
+
+                    -webkit-animation: animatebigbub 10s linear infinite, sideWays 4s ease-in-out infinite alternate;
+                    -moz-animation: animatebigbub 10s linear infinite, sideWays 4s ease-in-out infinite alternate;
+                    animation: animatebigbub 10s linear infinite, sideWays 4s ease-in-out infinite alternate;
+
+
+
+                }
+
+                :after {
+                    background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+                    /* FF3.6+ */
+                    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255, 255, 255, 0.5)), color-stop(70%, rgba(255, 255, 255, 0)));
+                    /* Chrome,Safari4+ */
+                    background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+                    /* Chrome10+,Safari5.1+ */
+                    background: -o-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+                    /* Opera 12+ */
+                    background: -ms-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+                    /* IE10+ */
+                    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+                    /* W3C */
+                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80ffffff', endColorstr='#00ffffff', GradientType=1);
+                    /* IE6-9 fallback on horizontal gradient */
+
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    border-radius: 50%;
+
+                    -webkit-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+                    -moz-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+                    box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+
+
+                }
+
+
+
+                img {
+                    width: 100%;
+                    height: 90%;
+
+                }
+
+                @keyframes animatebigbub {
+                    0% {
+                        left: 100px;
+                        top: 0px;
+                    }
+
+                    25% {
+                        left: 0px;
+                        bottom: asdfg100px;
+                    }
+
+                    50% {
+                        left: -100px;
+                        top: -100px;
+
+                    }
+
+                    75% {
+                        left: 0px;
+                        top: 0px;
+
+                    }
+
+                    100% {
+                        left: 100px;
+                        top: 0px;
+
+                    }
+
+                }
+
+
+
+            }
+
+
+
+        }
+
+    }
+}
+
+
+}
+
+
+/**************Mobile  RESOISIVE End************/
