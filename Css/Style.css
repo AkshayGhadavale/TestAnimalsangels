@@ -17,10 +17,15 @@
   display: none;
 }
 
+body {
+  background: #C8CFA0;
+}
+
 .Wrapper {
   width: 100%;
   height: 100vh;
   background: #FCDC94;
+  border-bottom-left-radius: 50%;
   /*************HEader/Navbar START************/
   /*************HEader/Navbar  END************/
   /*************First section  Start************/
@@ -225,7 +230,7 @@
   align-items: center;
 }
 .Wrapper .Firstsection .Rightsection .container {
-  width: 100%;
+  width: 90%;
   margin: 50px auto;
   padding: 0 15px;
 }
@@ -262,23 +267,31 @@
   mask-repeat: no-repeat;
 }
 
+/*************second section  start************/
 .Secondsection {
   width: 100%;
   height: 70vh;
+  background: #FCDC94;
+}
+.Secondsection .Subsecondsec {
+  width: 100%;
+  height: 100%;
   background: #C8CFA0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
 }
-.Secondsection .Headersec {
+.Secondsection .Subsecondsec .Headersec {
   width: 100%;
   height: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.Secondsection .Headersec h1 {
+.Secondsection .Subsecondsec .Headersec h1 {
   font-family: "Shantell Sans", cursive;
   font-optical-sizing: auto;
   font-weight: 400p;
@@ -288,31 +301,32 @@
   font-weight: 800;
   color: rgb(255, 255, 255);
   text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+  font-size: 4.5rem;
 }
-.Secondsection .Contentsec {
+.Secondsection .Subsecondsec .Contentsec {
   width: 100%;
   height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.Secondsection .Contentsec .imagesec {
+.Secondsection .Subsecondsec .Contentsec .imagesec {
   width: 30%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.Secondsection .Contentsec .imagesec .container {
+.Secondsection .Subsecondsec .Contentsec .imagesec .container {
   width: 100%;
   padding: 0 15px;
 }
-.Secondsection .Contentsec .imagesec .image-block {
+.Secondsection .Subsecondsec .Contentsec .imagesec .image-block {
   padding-bottom: 78.4%;
   width: 100%;
   position: relative;
 }
-.Secondsection .Contentsec .imagesec .image-block__body {
+.Secondsection .Subsecondsec .Contentsec .imagesec .image-block__body {
   -webkit-mask-image: var(--bg-image);
   mask-image: var(--bg-image);
   -webkit-mask-repeat: no-repeat;
@@ -325,7 +339,7 @@
   z-index: 1;
   background: #FFD599;
 }
-.Secondsection .Contentsec .imagesec img {
+.Secondsection .Subsecondsec .Contentsec .imagesec img {
   position: absolute;
   z-index: 3;
   width: 100%;
@@ -339,16 +353,17 @@
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
 }
-.Secondsection .Contentsec .textsec {
+.Secondsection .Subsecondsec .Contentsec .textsec {
   width: 70%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
 }
-.Secondsection .Contentsec .textsec p {
+.Secondsection .Subsecondsec .Contentsec .textsec p {
+  width: 80%;
   font-family: "Shantell Sans", cursive;
   font-optical-sizing: auto;
   font-weight: 400p;
@@ -356,12 +371,170 @@
   font-variation-settingsASDFGasdfg: "BNCE" 0, "INFM" 0, "SPAC" 0;
   font-size: 1.5rem;
   font-weight: bold;
+  white-space: 10px;
   color: rgb(0, 0, 0);
   margin-bottom: 20px;
   padding: 0px 20px 0 20px;
 }
 
-/*************First section  End************/
+/*************second section  End************/
+.ThirdSection {
+  width: 100%;
+  height: 70vh;
+  background: #C8CFA0;
+}
+.ThirdSection .SubThirdSection {
+  width: 100%;
+  height: 100%;
+  background: #FCDC94;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top-left-radius: 50%;
+}
+.ThirdSection .SubThirdSection .Headersec {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ThirdSection .SubThirdSection .Headersec h1 {
+  font-family: "Shantell Sans", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400p;
+  font-style: normal;
+  font-variation-settingsASDFGasdfg: "BNCE" 0, "INFM" 0, "SPAC" 0;
+  font-size: 5rem;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+  font-size: 4.5rem;
+}
+.ThirdSection .SubThirdSection .Contentsec {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ThirdSection .SubThirdSection .Contentsec .container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+.ThirdSection .SubThirdSection .Contentsec .container .card {
+  position: relative;
+  width: 400px;
+  height: 350px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 7px;
+  -webkit-mask-image: var(--bg-image);
+  mask-image: var(--bg-image);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  z-index: 1;
+}
+.ThirdSection .SubThirdSection .Contentsec .container .card .face {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.ThirdSection .SubThirdSection .Contentsec .container .card .face.hidden {
+  box-sizing: border-box;
+  padding: 20px;
+}
+.ThirdSection .SubThirdSection .Contentsec .container .card .face.hidden h2 {
+  margin: 0;
+  padding: 0;
+}
+.ThirdSection .SubThirdSection .Contentsec .container .card .face.front {
+  display: grid;
+  grid-template-rows: 175px 100px;
+  grid-template-areas: "icon" "text";
+  background: #111;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+.ThirdSection .SubThirdSection .Contentsec .container .card .face.front i {
+  grid-area: icon;
+}
+.ThirdSection .SubThirdSection .Contentsec .container .card .face.front h2 {
+  grid-area: text;
+}
+.ThirdSection .SubThirdSection .Contentsec .container .card:nth-child(1) .face.front {
+  background: #db4921;
+}
+.ThirdSection .SubThirdSection .Contentsec .container .card:nth-child(2) .face.front {
+  background: #037fa1;
+}
+.ThirdSection .SubThirdSection .Contentsec .container .card:nth-child(3) .face.front {
+  background: #3ec9be;
+}
+.ThirdSection .SubThirdSection .Contentsec .container .card:hover .face.front {
+  width: 0px;
+}
+.ThirdSection .SubThirdSection .Contentsec .container .card .face.front:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+}
+.ThirdSection .SubThirdSection .Contentsec .face.front i {
+  grid-area: icon;
+  display: block;
+  font-size: 30px;
+  margin-top: 125px;
+  color: #fff;
+  font-weight: normal;
+  transition: all 0.5s ease;
+  font-family: "Shantell Sans", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400p;
+  font-style: normal;
+  font-variation-settingsASDFGasdfg: "BNCE" 0, "INFM" 0, "SPAC" 0;
+}
+.ThirdSection .SubThirdSection .Contentsec .container .card:hover .face.front i {
+  font-size: 0;
+}
+.ThirdSection .SubThirdSection .Contentsec .face.front h2 {
+  grid-area: text;
+  font-size: 2em;
+  color: #fff;
+  margin-top: 0px;
+  text-align: center;
+  margin-bottom: 120px;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+  font-family: "Shantell Sans", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400p;
+  font-style: normal;
+  font-variation-settingsASDFGasdfg: "BNCE" 0, "INFM" 0, "SPAC" 0;
+}
+.ThirdSection .SubThirdSection .Contentsec .container .card:hover .face.front h2 {
+  font-size: 0;
+}
+.ThirdSection .SubThirdSection .Contentsec .card:hover {
+  width: 600px;
+  height: 550px;
+  z-index: 99;
+}
+
+/*************Third section  start************/
+/*************Third section  End************/
 /*************Mobile  RESOISIVE   START************/
 @media only screen and (min-width: 360px) and (max-width: 640px) {
   /* navbarsection  for mobile Start */
@@ -419,7 +592,7 @@
   }
   .Wrapper {
     width: 100%;
-    height: 220vh;
+    height: 150vh;
     background: #FCDC94;
     /*************HEader/Navbar START************/
     /*************HEader/Navbar  END************/
@@ -463,8 +636,8 @@
     transform: rotate(45deg) translate(-10px, -10px);
   }
   .Wrapper .Header .Navbar .Logosec {
-    width: 70%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -523,7 +696,7 @@
   }
   .Wrapper .Firstsection .Leftsection {
     width: 100%;
-    height: 60%;
+    height: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -550,7 +723,7 @@
     font-weight: 400p;
     font-style: normal;
     font-variation-settingsASDFGasdfg: "BNCE" 0, "INFM" 0, "SPAC" 0;
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 800;
     color: rgb(255, 255, 255);
     text-shadow: 0 0 3px #000000, 0 0 5px #000000;
@@ -564,7 +737,7 @@
     font-weight: 400p;
     font-style: normal;
     font-variation-settingsASDFGasdfg: "BNCE" 0, "INFM" 0, "SPAC" 0;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: rgb(0, 0, 0);
     margin-bottom: 20px;
   }
@@ -643,7 +816,7 @@
   }
   .Wrapper .Firstsection .Rightsection {
     width: 100%;
-    height: 40%;
+    height: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -702,5 +875,114 @@
       top: 0px;
     }
   }
+  /*************second section  start************/
+  .Secondsection {
+    width: 100%;
+    height: 180vh;
+    background: #FCDC94;
+  }
+  .Secondsection .Subsecondsec {
+    width: 100%;
+    height: 100%;
+    background: #C8CFA0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top-right-radius: 50%;
+  }
+  .Secondsection .Subsecondsec .Headersec {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Secondsection .Subsecondsec .Headersec h1 {
+    font-family: "Shantell Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400p;
+    font-style: normal;
+    font-variation-settingsASDFGasdfg: "BNCE" 0, "INFM" 0, "SPAC" 0;
+    font-size: 5rem;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+    font-size: 3rem;
+  }
+  .Secondsection .Subsecondsec .Contentsec {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .Secondsection .Subsecondsec .Contentsec .imagesec {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Secondsection .Subsecondsec .Contentsec .imagesec .container {
+    width: 90%;
+    padding: 0 15px;
+  }
+  .Secondsection .Subsecondsec .Contentsec .imagesec .image-block {
+    padding-bottom: 78.4%;
+    width: 100%;
+    position: relative;
+  }
+  .Secondsection .Subsecondsec .Contentsec .imagesec .image-block__body {
+    -webkit-mask-image: var(--bg-image);
+    mask-image: var(--bg-image);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    position: absolute;
+    width: calc(100% + 40px);
+    height: calc(100% + 40px);
+    top: -20px;
+    left: -20px;
+    z-index: 1;
+    background: #FFD599;
+  }
+  .Secondsection .Subsecondsec .Contentsec .imagesec img {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-mask-image: var(--image);
+    mask-image: var(--image);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+  }
+  .Secondsection .Subsecondsec .Contentsec .textsec {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .Secondsection .Subsecondsec .Contentsec .textsec p {
+    font-family: "Shantell Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400p;
+    font-style: normal;
+    font-variation-settingsASDFGasdfg: "BNCE" 0, "INFM" 0, "SPAC" 0;
+    font-size: 1rem;
+    font-weight: bold;
+    white-space: 10px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    padding: 0px 20px 0 20px;
+  }
+  /*************second section  End************/
 }
 /**************Mobile  RESOISIVE End************//*# sourceMappingURL=Style.css.map */
