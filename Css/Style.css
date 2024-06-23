@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 :root {
@@ -378,6 +379,7 @@ body {
 }
 
 /*************second section  End************/
+/*************Third section  start************/
 .ThirdSection {
   width: 100%;
   height: 70vh;
@@ -392,6 +394,7 @@ body {
   align-items: center;
   flex-direction: column;
   border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
 }
 .ThirdSection .SubThirdSection .Headersec {
   width: 100%;
@@ -410,7 +413,7 @@ body {
   font-weight: 800;
   color: rgb(255, 255, 255);
   text-shadow: 0 0 3px #000000, 0 0 5px #000000;
-  font-size: 4.5rem;
+  font-size: 4rem;
 }
 .ThirdSection .SubThirdSection .Contentsec {
   width: 100%;
@@ -424,11 +427,12 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 20px;
+  cursor: pointer;
 }
 .ThirdSection .SubThirdSection .Contentsec .container .card {
   position: relative;
-  width: 400px;
-  height: 350px;
+  width: 20vw;
+  height: 400px;
   margin: 0 auto;
   background: #fff;
   border-radius: 7px;
@@ -437,6 +441,11 @@ body {
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   z-index: 1;
+  transition-property: all, visibility;
+  transition-duration: 1s, 0s;
+  transition-timing-function: ease-in-out, linear;
+  transition: all 0.3s ease;
+  position: relative;
 }
 .ThirdSection .SubThirdSection .Contentsec .container .card .face {
   position: absolute;
@@ -453,9 +462,47 @@ body {
   box-sizing: border-box;
   padding: 20px;
 }
-.ThirdSection .SubThirdSection .Contentsec .container .card .face.hidden h2 {
-  margin: 0;
-  padding: 0;
+.ThirdSection .SubThirdSection .Contentsec .container .card .face.hidden .btn {
+  margin: 50px;
+  height: 50px;
+  width: 200px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Poppins";
+  color: #037fa1;
+  background: #037fa1;
+  color: #fff;
+  border-radius: 15px;
+  border: 2px solid #037fa1;
+  transition: all 0.5s ease;
+}
+.ThirdSection .SubThirdSection .Contentsec .container .card .face.hidden .btn:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: transparent;
+}
+.ThirdSection .SubThirdSection .Contentsec .container .card .face.hidden.hid1 {
+  background-image: url(/images/TherapyDog1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.ThirdSection .SubThirdSection .Contentsec .container .card .face.hidden.hid2 {
+  background-image: url(/images/group-thrapey.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.ThirdSection .SubThirdSection .Contentsec .container .card .face.hidden.hid3 {
+  background-image: url(/images/schools-and-nurseries-3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.ThirdSection .SubThirdSection .Contentsec .container .card .face.hidden.hid4 {
+  background-image: url(/images/office.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .ThirdSection .SubThirdSection .Contentsec .container .card .face.front {
   display: grid;
@@ -464,6 +511,9 @@ body {
   background: #111;
   text-align: center;
   transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .ThirdSection .SubThirdSection .Contentsec .container .card .face.front i {
   grid-area: icon;
@@ -505,17 +555,21 @@ body {
   font-weight: 400p;
   font-style: normal;
   font-variation-settingsASDFGasdfg: "BNCE" 0, "INFM" 0, "SPAC" 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .ThirdSection .SubThirdSection .Contentsec .container .card:hover .face.front i {
   font-size: 0;
 }
 .ThirdSection .SubThirdSection .Contentsec .face.front h2 {
   grid-area: text;
-  font-size: 2em;
+  font-size: 1.5vw;
   color: #fff;
   margin-top: 0px;
+  width: 80%;
   text-align: center;
-  margin-bottom: 120px;
+  margin-bottom: 100px;
   text-transform: uppercase;
   transition: all 0.5s ease;
   font-family: "Shantell Sans", cursive;
@@ -527,14 +581,304 @@ body {
 .ThirdSection .SubThirdSection .Contentsec .container .card:hover .face.front h2 {
   font-size: 0;
 }
-.ThirdSection .SubThirdSection .Contentsec .card:hover {
+.ThirdSection .SubThirdSection .Contentsec .expanded {
   width: 600px;
   height: 550px;
-  z-index: 99;
+  z-index: 999;
+  position: relative;
+}
+.ThirdSection .SubThirdSection .Contentsec .expanded.num1 {
+  left: 200px;
+}
+.ThirdSection .SubThirdSection .Contentsec .expanded.num2 {
+  left: 100px;
+}
+.ThirdSection .SubThirdSection .Contentsec .expanded.num3 {
+  right: 100px;
+}
+.ThirdSection .SubThirdSection .Contentsec .expanded.num4 {
+  right: 200px;
+}
+.ThirdSection .SubThirdSection .Contentsec .collapsed {
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
-/*************Third section  start************/
 /*************Third section  End************/
+/*************Fourth section  start************/
+.FourthSection {
+  width: 100%;
+  height: 70vh;
+  background: #FCDC94;
+}
+.FourthSection .SubFourthSection {
+  width: 100%;
+  height: 100%;
+  background: #C8CFA0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.FourthSection .SubFourthSection .Headersec {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.FourthSection .SubFourthSection .Headersec h1 {
+  font-family: "Shantell Sans", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400p;
+  font-style: normal;
+  font-variation-settingsASDFGasdfg: "BNCE" 0, "INFM" 0, "SPAC" 0;
+  font-size: 5rem;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+  font-size: 4rem;
+}
+.FourthSection .SubFourthSection .Contentsec {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.FourthSection .SubFourthSection .Contentsec .carousel {
+  width: 100%;
+  max-width: 1200px;
+}
+.FourthSection .SubFourthSection .Contentsec .carousel figure.snip1139 {
+  font-family: "Shantell Sans", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400p;
+  font-style: normal;
+  font-variation-settingsASDFGasdfg: "BNCE" 0, "INFM" 0, "SPAC" 0;
+  position: relative;
+  overflow: hidden;
+  margin: 20px;
+  min-width: 220px;
+  max-width: 400px;
+  width: 100%;
+  color: #333;
+  text-align: left;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+.FourthSection .SubFourthSection .Contentsec .carousel figure.snip1139 * {
+  box-sizing: border-box;
+  transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+.FourthSection .SubFourthSection .Contentsec .carousel figure.snip1139 img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+.FourthSection .SubFourthSection .Contentsec .carousel figure.snip1139 iframe {
+  max-width: 100%;
+  vertical-align: middle;
+}
+.FourthSection .SubFourthSection .Contentsec .carousel figure.snip1139 blockquote {
+  position: relative;
+  background-color: #ffffff;
+  padding: 25px 50px 25px 50px;
+  font-size: 0.8em;
+  font-weight: 500;
+  text-align: left;
+  margin: 0;
+  line-height: 1.6em;
+  font-style: italic;
+}
+.FourthSection .SubFourthSection .Contentsec .carousel figure.snip1139 blockquote:before, .FourthSection .SubFourthSection .Contentsec .carousel figure.snip1139 blockquote:after {
+  font-family: "Shantell Sans", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400p;
+  font-style: normal;
+  font-variation-settingsASDFGasdfg: "BNCE" 0, "INFM" 0, "SPAC" 0;
+  position: absolute;
+  font-size: 50px;
+  opacity: 0.3;
+  font-style: normal;
+}
+.FourthSection .SubFourthSection .Contentsec .carousel figure.snip1139 blockquote:before {
+  top: 25px;
+  left: 20px;
+}
+.FourthSection .SubFourthSection .Contentsec .carousel figure.snip1139 blockquote:after {
+  content: "”";
+  right: 20px;
+  bottom: 0;
+}
+.FourthSection .SubFourthSection .Contentsec .carousel figure.snip1139 .arrow {
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #ffffff;
+  margin: 0;
+  position: absolute;
+}
+.FourthSection .SubFourthSection .Contentsec .carousel figure.snip1139 .author {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 25px;
+  color: #000000;
+  background-color: #ffffff;
+  margin: 0;
+  text-transform: uppercase;
+}
+.FourthSection .SubFourthSection .Contentsec .carousel figure.snip1139 .author h5 {
+  opacity: 0.8;
+  margin: 0;
+  font-weight: 800;
+}
+.FourthSection .SubFourthSection .Contentsec .carousel figure.snip1139 .author h5 span {
+  font-weight: 400;
+  text-transform: none;
+  padding-left: 5px;
+}
+
+/*************Fourth section  End************/
+/*************fifth section  start************/
+.fifthSection {
+  width: 100%;
+  height: 70vh;
+  background: #C8CFA0;
+}
+.fifthSection .SubfifthSection {
+  width: 100%;
+  height: 100%;
+  background: #FCDC94;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top-left-radius: 50%;
+}
+.fifthSection .SubfifthSection .Headersec {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fifthSection .SubfifthSection .Headersec h1 {
+  font-family: "Shantell Sans", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400p;
+  font-style: normal;
+  font-variation-settingsASDFGasdfg: "BNCE" 0, "INFM" 0, "SPAC" 0;
+  font-size: 5rem;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+  font-size: 4rem;
+}
+.fifthSection .SubfifthSection .Contentsec {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.fifthSection .SubfifthSection .Contentsec .card {
+  width: 300px;
+  height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 36px;
+  perspective: 2500px;
+  margin: 0 50px;
+  border-radius: 30px;
+}
+.fifthSection .SubfifthSection .Contentsec .cover-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 30px;
+}
+.fifthSection .SubfifthSection .Contentsec .wrapper {
+  transition: all 0.5s;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  border-radius: 30px;
+}
+.fifthSection .SubfifthSection .Contentsec .card:hover .wrapper {
+  transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+  box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  border-radius: 30px;
+  filter: blur(5px);
+}
+.fifthSection .SubfifthSection .Contentsec .wrapper::before, .fifthSection .SubfifthSection .Contentsec .wrapper::after {
+  content: "";
+  opacity: 0;
+  width: 100%;
+  height: 80px;
+  transition: all 0.5s;
+  position: absolute;
+  left: 0;
+}
+.fifthSection .SubfifthSection .Contentsec .wrapper::before {
+  top: 0;
+  height: 100%;
+  background-image: linear-gradient(to top, transparent 46%, rgba(12, 13, 19, 0.5) 68%, rgb(12, 13, 19) 97%);
+}
+.fifthSection .SubfifthSection .Contentsec .wrapper::after {
+  bottom: 0;
+  opacity: 1;
+  background-image: linear-gradient(to bottom, transparent 46%, rgba(12, 13, 19, 0.5) 68%, rgb(12, 13, 19) 97%);
+}
+.fifthSection .SubfifthSection .Contentsec .card:hover .wrapper::before, .fifthSection .SubfifthSection .Contentsec .wrapper::after {
+  opacity: 1;
+  border-radius: 30px;
+}
+.fifthSection .SubfifthSection .Contentsec .card:hover .wrapper::after {
+  height: 120px;
+  border-radius: 30px;
+}
+.fifthSection .SubfifthSection .Contentsec .title {
+  width: 100%;
+  transition: transform 0.5s;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Shantell Sans", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400p;
+  font-style: normal;
+  font-variation-settingsASDFGasdfg: "BNCE" 0, "INFM" 0, "SPAC" 0;
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+}
+.fifthSection .SubfifthSection .Contentsec .card:hover .title {
+  transform: translate3d(0%, -50px, 100px);
+}
+.fifthSection .SubfifthSection .Contentsec .character {
+  width: 110%;
+  opacity: 0;
+  transition: all 0.5s;
+  position: absolute;
+  z-index: -1;
+}
+.fifthSection .SubfifthSection .Contentsec .card:hover .character {
+  opacity: 1;
+  transform: translate3d(0%, -30%, 100px);
+}
+
+/*************fifth section  end************/
 /*************Mobile  RESOISIVE   START************/
 @media only screen and (min-width: 360px) and (max-width: 640px) {
   /* navbarsection  for mobile Start */
@@ -984,5 +1328,382 @@ body {
     padding: 0px 20px 0 20px;
   }
   /*************second section  End************/
+  /*************Third section  start************/
+  .ThirdSection {
+    width: 100%;
+    height: 160vh;
+    background: #C8CFA0;
+  }
+  .ThirdSection .SubThirdSection {
+    width: 100%;
+    height: 100%;
+    background: #FCDC94;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top-left-radius: 50%;
+  }
+  .ThirdSection .SubThirdSection .Headersec {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ThirdSection .SubThirdSection .Headersec h1 {
+    text-align: center;
+    font-family: "Shantell Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400p;
+    font-style: normal;
+    font-variation-settingsASDFGasdfg: "BNCE" 0, "INFM" 0, "SPAC" 0;
+    font-size: 5rem;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+    font-size: 2rem;
+  }
+  .ThirdSection .SubThirdSection .Contentsec {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ThirdSection .SubThirdSection .Contentsec .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    cursor: pointer;
+  }
+  .ThirdSection .SubThirdSection .Contentsec .container .card {
+    padding: 0 20px;
+    width: 20vw;
+    height: 400px;
+  }
+  .ThirdSection .SubThirdSection .Contentsec .container .face.front h2 {
+    grid-area: text;
+    font-size: 1rem;
+  }
+  .ThirdSection .SubThirdSection .Contentsec .container .container .card .face.hidden h2 {
+    font-size: 1rem;
+  }
+  .ThirdSection .SubThirdSection .Contentsec .container .container .card .face.hidden p {
+    font-size: 0.9em;
+  }
+  .ThirdSection .SubThirdSection .Contentsec .container .card {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 7px;
+    -webkit-mask-image: var(--bg-image);
+    mask-image: var(--bg-image);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    z-index: 1;
+    transition-property: all, visibility;
+    transition-duration: 1s, 0s;
+    transition-timing-function: ease-in-out, linear;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  .ThirdSection .SubThirdSection .Contentsec .container .card .face {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+  .ThirdSection .SubThirdSection .Contentsec .container .card .face.hidden {
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  .ThirdSection .SubThirdSection .Contentsec .container .card .face.hidden .btn {
+    margin: 50px;
+    height: 50px;
+    width: 100px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Poppins";
+    color: #037fa1;
+    background: #037fa1;
+    color: #fff;
+    border-radius: 15px;
+    border: 2px solid #037fa1;
+    transition: all 0.5s ease;
+  }
+  .ThirdSection .SubThirdSection .Contentsec .container .card .face.hidden .btn:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: transparent;
+  }
+  .ThirdSection .SubThirdSection .Contentsec .container .card .face.hidden.hid1 {
+    background-image: url(/images/TherapyDog1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .ThirdSection .SubThirdSection .Contentsec .container .card .face.hidden.hid2 {
+    background-image: url(/images/group-thrapey.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .ThirdSection .SubThirdSection .Contentsec .container .card .face.hidden.hid3 {
+    background-image: url(/images/schools-and-nurseries-3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .ThirdSection .SubThirdSection .Contentsec .container .card .face.hidden.hid4 {
+    background-image: url(/images/office.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .ThirdSection .SubThirdSection .Contentsec .container .card .face.front {
+    display: grid;
+    grid-template-rows: 175px 100px;
+    grid-template-areas: "icon" "text";
+    background: #111;
+    text-align: center;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ThirdSection .SubThirdSection .Contentsec .container .card .face.front i {
+    grid-area: icon;
+  }
+  .ThirdSection .SubThirdSection .Contentsec .container .card .face.front h2 {
+    grid-area: text;
+    margin-top: 60px;
+  }
+  .ThirdSection .SubThirdSection .Contentsec .container .card:nth-child(1) .face.front {
+    background: #db4921;
+  }
+  .ThirdSection .SubThirdSection .Contentsec .container .card:nth-child(2) .face.front {
+    background: #037fa1;
+  }
+  .ThirdSection .SubThirdSection .Contentsec .container .card:nth-child(3) .face.front {
+    background: #3ec9be;
+  }
+  .ThirdSection .SubThirdSection .Contentsec .container .card:hover .face.front {
+    width: 0px;
+  }
+  .ThirdSection .SubThirdSection .Contentsec .container .card .face.front:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .ThirdSection .SubThirdSection .Contentsec .face.front i {
+    grid-area: icon;
+    display: block;
+    font-size: 30px;
+    margin-top: 125px;
+    color: #fff;
+    font-weight: normal;
+    transition: all 0.5s ease;
+    font-family: "Shantell Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400p;
+    font-style: normal;
+    font-variation-settingsASDFGasdfg: "BNCE" 0, "INFM" 0, "SPAC" 0;
+  }
+  .ThirdSection .SubThirdSection .Contentsec .container .card:hover .face.front i {
+    font-size: 0;
+  }
+  .ThirdSection .SubThirdSection .Contentsec .face.front h2 {
+    grid-area: text;
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 0px;
+    text-align: center;
+    margin-bottom: 120px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    font-family: "Shantell Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400p;
+    font-style: normal;
+    font-variation-settingsASDFGasdfg: "BNCE" 0, "INFM" 0, "SPAC" 0;
+  }
+  .ThirdSection .SubThirdSection .Contentsec .container .card:hover .face.front h2 {
+    font-size: 0;
+  }
+  .ThirdSection .SubThirdSection .Contentsec .expanded {
+    width: 600px;
+    height: 550px;
+    z-index: 999;
+    position: relative;
+  }
+  .ThirdSection .SubThirdSection .Contentsec .expanded.num1 {
+    left: 200px;
+  }
+  .ThirdSection .SubThirdSection .Contentsec .expanded.num2 {
+    left: 100px;
+  }
+  .ThirdSection .SubThirdSection .Contentsec .expanded.num3 {
+    right: 100px;
+  }
+  .ThirdSection .SubThirdSection .Contentsec .expanded.num4 {
+    right: 200px;
+  }
+  .ThirdSection .SubThirdSection .Contentsec .collapsed {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  /*************Third section  End************/
+  /*************Fourth section  start************/
+  .FourthSection {
+    width: 100%;
+    height: 100vh;
+    background: #FCDC94;
+  }
+  .FourthSection .SubFourthSection {
+    width: 100%;
+    height: 100%;
+    background: #C8CFA0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top-right-radius: 50%;
+  }
+  .FourthSection .SubFourthSection .Headersec {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .FourthSection .SubFourthSection .Headersec h1 {
+    text-align: center;
+    font-family: "Shantell Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400p;
+    font-style: normal;
+    font-variation-settingsASDFGasdfg: "BNCE" 0, "INFM" 0, "SPAC" 0;
+    font-size: 5rem;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+    font-size: 2.5rem;
+  }
+  .FourthSection .SubFourthSection .Contentsec {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    overflow: hidden;
+  }
+  .FourthSection .SubFourthSection .Contentsec .carousel {
+    width: 100%;
+    max-width: 1600px;
+  }
+  .FourthSection .SubFourthSection .Contentsec .carousel figure.snip1139 {
+    font-family: "Shantell Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400p;
+    font-style: normal;
+    font-variation-settingsASDFGasdfg: "BNCE" 0, "INFM" 0, "SPAC" 0;
+    position: relative;
+    overflow: hidden;
+    margin: 30px;
+    min-width: 220px;
+    max-width: 420px;
+    color: #333;
+    text-align: left;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+  }
+  .FourthSection .SubFourthSection .Contentsec .carousel figure.snip1139 * {
+    box-sizing: border-box;
+    transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  }
+  .FourthSection .SubFourthSection .Contentsec .carousel figure.snip1139 img {
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  .FourthSection .SubFourthSection .Contentsec .carousel figure.snip1139 iframe {
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  .FourthSection .SubFourthSection .Contentsec .carousel figure.snip1139 blockquote {
+    position: relative;
+    background-color: #ffffff;
+    padding: 25px 50px 25px 50px;
+    font-size: 0.8em;
+    font-weight: 500;
+    text-align: left;
+    margin: 0;
+    line-height: 1.6em;
+    font-style: italic;
+  }
+  .FourthSection .SubFourthSection .Contentsec .carousel figure.snip1139 blockquote:before, .FourthSection .SubFourthSection .Contentsec .carousel figure.snip1139 blockquote:after {
+    font-family: "Shantell Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400p;
+    font-style: normal;
+    font-variation-settingsASDFGasdfg: "BNCE" 0, "INFM" 0, "SPAC" 0;
+    position: absolute;
+    font-size: 50px;
+    opacity: 0.3;
+    font-style: normal;
+  }
+  .FourthSection .SubFourthSection .Contentsec .carousel figure.snip1139 blockquote:before {
+    top: 25px;
+    left: 20px;
+  }
+  .FourthSection .SubFourthSection .Contentsec .carousel figure.snip1139 blockquote:after {
+    content: "”";
+    right: 20px;
+    bottom: 0;
+  }
+  .FourthSection .SubFourthSection .Contentsec .carousel figure.snip1139 .arrow {
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-left: 0 solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid #ffffff;
+    margin: 0;
+    position: absolute;
+  }
+  .FourthSection .SubFourthSection .Contentsec .carousel figure.snip1139 .author {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 25px;
+    color: #000000;
+    background-color: #ffffff;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  .FourthSection .SubFourthSection .Contentsec .carousel figure.snip1139 .author h5 {
+    opacity: 0.8;
+    margin: 0;
+    font-weight: 800;
+  }
+  .FourthSection .SubFourthSection .Contentsec .carousel figure.snip1139 .author h5 span {
+    font-weight: 400;
+    text-transform: none;
+    padding-left: 5px;
+  }
+  /*************Fourth section  End************/
 }
 /**************Mobile  RESOISIVE End************//*# sourceMappingURL=Style.css.map */

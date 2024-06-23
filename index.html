@@ -6,6 +6,9 @@
     <title>Animals Angels</title>
     <link rel="stylesheet" href="./Css/Style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  
   </head>
   <body>
     <div class="Wrapper">
@@ -77,7 +80,7 @@
       </div>
       <div class="Firstsection">
         <div class="Leftsection">
-          <div class="main-textsec"  data-aos="fade-right">
+          <div class="main-textsec"  data-aos="fade-right" aos-duration="3000">
             <h1 >
               Welcome to <br />
               <span class="anitext">Animals Angels</span>
@@ -111,7 +114,7 @@
         </div>
         <div class="Rightsection">
            
-          <div class="container" aos-duration="3000" data-aos="slide-left">
+          <div class="container" aos-duration="1000" data-aos="slide-left">
             <div class="image-block">
               <img
                 src="./Video/5263678-uhd_4096_2160_30fps-ezgif.com-video-to-gif-converter.gif"
@@ -171,59 +174,53 @@
 
     <div class="ThirdSection">
       <div class="SubThirdSection">
-        <div class="Headersec"><h1>Our Therapeutic Services</h1>
+        <div class="Headersec"><h1 data-aos="fade-down" aos-duration="3000" >Our Therapeutic Services</h1>
 
 
         </div>
         <div class="Contentsec">
           <div class="container">
-            <div class="card">
-              <div class= "face hidden">
-                <div class= "content">
-                  <h2>Lorem Ipsum</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor maximus risus pellentesque imperdiet.</p>
-                </div>
-              </div>
+            <div class="card num1" onclick="toggleExpand(this)"  data-aos="fade-up-left" aos-duration="6000">
+              <div class= "face hidden hid1">
+             
+                <button class="btn">Explore More!</button> 
+                      </div>
               <div class="face front">
                            <i class="fa fa-lock"></i>
                               <h2>Individual Therapy Sessions</h2>
               </div>
             </div>
-            <div class="card">
-              <div class= "face hidden">
+            <div class="card num2" onclick="toggleExpand(this)" data-aos="fade-up-left" aos-duration="5000">
+              <div class= "face hidden  hid2">
                 <div class= "content">
-                  <h2>Lorem Ipsum</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor maximus risus pellentesque imperdiet.</p>
-                </div>
+                  <button class="btn">Explore More!</button>   </div>
               </div>
               <div class="face front">
             <i class="fa fa-star"></i>
-                <h2>premium</h2>
+                <h2> Group Therapy Programs
+                </h2>
               </div>
             </div>
-            <div class="card">
-              <div class= "face hidden">
+            <div class="card num3" onclick="toggleExpand(this)" data-aos="fade-up-right" aos-duration="5000">
+              <div class= "face hidden hid3">
                 <div class= "content">
-                  <h2>Lorem Ipsum</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor maximus risus pellentesque imperdiet.</p>
-                </div>
+                  <button class="btn">Explore More!</button>      </div>
               </div>
               <div class="face front">
                 <i class="fa fa-life-ring"></i>
-                <h2>support</h2>
+                <h2>School and Hospital Visits</h2>
               </div>
             </div>
 
-            <div class="card">
-              <div class= "face hidden">
+            <div class="card num4" onclick="toggleExpand(this)" data-aos="fade-up-right" aos-duration="6000">
+              <div class= "face hidden hid4">
                 <div class= "content">
-                  <h2>Lorem Ipsum</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor maximus risus pellentesque imperdiet.</p>
-                </div>
+                  <button class="btn">Explore More!</button>                  </div>
               </div>
               <div class="face front">
                 <i class="fa fa-life-ring"></i>
-                <h2>support</h2>
+                <h2>Corporate Wellness Programs
+                </h2>
               </div>
             </div>
           </div>
@@ -237,10 +234,149 @@
 
     </div>
 
+
+    <div class="FourthSection">
+      <div class="SubFourthSection">
+        <div class="Headersec"><h1 data-aos="fade-down" aos-duration="6000" >Videos Testimonials</h1>
+
+
+        </div>
+        <div class="Contentsec">
+          
+          <div class="Contentsec">
+            <div class="carousel">
+              <figure class="snip1139" >
+                <blockquote>Sometimes I think the surest sign that intelligent life exists elsewhere in the universe is that none of it has tried to contact us.
+                  <div class="arrow"></div>
+                </blockquote>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/VgXYFnwguj8?si=0KIpQm6TDxjSSojW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="author"> 
+                  <h5>Pelican Steve <span>- LittleThemes</span></h5>
+                </div>
+              </figure>
+              <figure class="snip1139 hover" >
+                <blockquote>I don't need to compromise on my principles, because they don't have the slightest bearing on what happens to me anyway.
+                  <div class="arrow"></div>
+                </blockquote>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/VgXYFnwguj8?si=0KIpQm6TDxjSSojW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="author">
+                  <h5>Max Conversion<span>- LittleThemes</span></h5>
+                </div>
+              </figure>
+              <figure class="snip1139" >
+                <blockquote>That's the problem with nature, something's always stinging you or oozing mucous all over you. Let's go and watch TV.
+                  <div class="arrow"></div>
+                </blockquote>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/VgXYFnwguj8?si=0KIpQm6TDxjSSojW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="author">
+                  <h5>Eleanor Faint<span>- LittleThemes</span></h5>
+                </div>
+              </figure>
+            </div>
+          </div>
+          
+          
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="fifthSection">
+      <div class="SubfifthSection">
+        <div class="Headersec"><h1  data-aos="fade-down" aos-duration="3000">Our Heros</h1>
+
+
+        </div>
+        <div class="Contentsec">
+<!--           
+                <div class="people__card">
+                  <div class="people__image">
+                    <img src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="大西 真裕">
+                  </div>
+                  <div class="people__info">
+                    <ul class="people__social">
+                      <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                      <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                      <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    </ul>
+                    <h3 class="people__name">Drew Houston</h3>
+                    <p class="people__position">Co-founder and CEO</p>
+                    <p class="people__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                  </div>
+                  <div class="people__btn">
+                    <a href="">View info</a>
+                  </div>
+                </div> -->
+
+                <div class="card">
+                  <div class="wrapper">
+                    <img src="/images/new dog.png" class="cover-image" />
+                  </div>
+                  <h1 class="title">benny</h1>  
+                   <video src="/images/output.webm" class="character" autoplay muted loop ></video>
+                </div>
+                
+                <div class="card">
+                  <div class="wrapper">
+                    <img src="/images/new dog.png" class="cover-image" />
+                  </div>
+                  <h1 class="title">benny</h1>  
+                   <video src="/images/output.webm" class="character" autoplay muted loop ></video>
+                </div>
+                
+                <div class="card">
+                  <div class="wrapper">
+                    <img src="/images/new dog.png" class="cover-image" />
+                  </div>
+                  <h1 class="title">benny</h1>  
+                   <video src="/images/output.webm" class="character" autoplay muted loop ></video>
+                </div>
+
+                  <div class="card">
+                    <div class="wrapper">
+                      <img src="/images/new dog.png" class="cover-image" />
+                    </div>
+                    <h1 class="title">benny</h1>  
+                     <video src="/images/output.webm" class="character" autoplay muted loop ></video>
+                  </div>
+
+
+                </div>
+                    </div>
+    </div>
+    
+
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
     <script>
+
+
+
+$(document).ready(function(){
+    $('.carousel').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      dots: true,
+      arrows: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+  });
+
 
 AOS.init({
   duration: 2000,
