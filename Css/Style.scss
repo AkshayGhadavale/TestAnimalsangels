@@ -12,9 +12,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    zoom: 75%;
+ 
 
 }
+
 
 
 /*************Mixins Start************/
@@ -41,7 +42,7 @@
 
 @mixin bigfont{
     @include Font-logo;
-                    font-size: 5rem;
+                    font-size: 4rem;
                     font-weight: 800;
                     color: rgb(255, 255, 255);
                     text-shadow: 0 0 3px #000000, 0 0 5px #000000;
@@ -252,7 +253,7 @@ body {
 
                 p {
                     @include Font-logo;
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                     color: rgb(0, 0, 0);
                     margin-bottom: 20px;
                     font-weight: bold;
@@ -691,7 +692,7 @@ body {
         p{
             width: 80%;
 @include Font-logo;
-font-size: 1.5rem;
+font-size: 1.2rem;
 font-weight:bold;
 white-space: 10px;
                     color: rgb(0, 0, 0);
@@ -797,9 +798,9 @@ white-space: 10px;
                   // Define styles for the button within the .hidden class
                   .btn {
                     margin: 50px;
-                    height: 50px;
-                    width: 200px;
-                    font-size: 18px;
+                    height: 30px;
+                    width: 150px;
+                    font-size: 16px;
                     font-weight: 600;
                     font-family: "Poppins";
                     color: #037fa1;
@@ -808,6 +809,7 @@ white-space: 10px;
                     border-radius: 15px;
                     border: 2px solid #037fa1;
                     transition: all 0.5s ease;
+                    margin-top: -60px;
                 
                     &:hover {
                       cursor: pointer;
@@ -912,7 +914,7 @@ white-space: 10px;
           .face.front h2 {
             grid-area: text;
             font-size: 1.5vw;            color: #fff;
-            margin-top: 0px;
+            margin-top: -60px;
             width: 80%;
             text-align: center;
            margin-bottom: 100px;
@@ -962,7 +964,7 @@ white-space: 10px;
 /*************Fourth section  start************/
 .FourthSection{
   width: 100%;
-  height:70vh;
+  height:100vh;
   background: #FCDC94;
 
 .SubFourthSection{
@@ -1007,11 +1009,14 @@ white-space: 10px;
         min-width: 220px;
         max-width: 400px;
         width: 100%;
+        height: 500px;
+        
       
         color: #333;
         text-align: left;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-        border-radius: 8px;
+        border-radius: 30px;
+      
 
       
         * {
@@ -1040,6 +1045,7 @@ white-space: 10px;
           margin: 0;
           line-height: 1.6em;
           font-style: italic;
+          
       
           &:before, &:after {
             @include Font-logo;
@@ -1112,7 +1118,7 @@ white-space: 10px;
 
 .fifthSection{
   width: 100%;
-  height:70vh;
+  height:90vh;
   background: #C8CFA0;
 
 
@@ -1131,7 +1137,7 @@ margin-bottom: 600px;
 
   .Headersec{
       width: 100%;
-      height: 20%;
+      height: 10%;
       @include disply-flex-center;
     
       h1{
@@ -1142,7 +1148,7 @@ margin-bottom: 600px;
   }
   .Contentsec{
       width: 100%;
-      height: 80%;
+      height: 90%;
       @include disply-flex-center;
 
       overflow: hidden;
@@ -1157,7 +1163,7 @@ margin-bottom: 600px;
       
     .card {
       width: 300px;
-      height: 500px;
+      height: 600px;
       position: relative;
       display: flex;
       justify-content: center;
@@ -1384,7 +1390,11 @@ ul {
 
 @media only screen and (min-width: 360px) and (max-width: 640px) {
     /* navbarsection  for mobile Start */
-
+body{
+  
+    zoom: 100%;
+  
+}
 
     .slider {
         display: flex;
