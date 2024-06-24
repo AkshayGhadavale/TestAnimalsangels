@@ -126,12 +126,12 @@ body {
                     @include Font-logo;
 
                     a {
-                        font-size: 1.4rem;
+                        font-size: 1.2rem;
 
-                        color: #000000;;
+                        color: #4b4646;;
                         text-decoration: none;
                         font-weight: bolder;
-                        text-shadow: 0 0 1px #000000,;
+                     
                  
 
                     }
@@ -1431,7 +1431,7 @@ body{
       
       .navlistmob {
         height: 50%;
-        width: 60%;
+        width: 65%;
         display: flex;
         flex-direction: column;
         list-style: none;
@@ -1443,7 +1443,7 @@ body{
       .navcontain {
         display: flex;
         justify-content: flex-end;
-        width: 70%;
+        width: 65%;
         height: 100%;
       }
       
@@ -1459,6 +1459,7 @@ body{
       
         a {
           font-size: 30px;
+          @include Font-logo;
           text-decoration: none;
           color: white;
           font-weight: 500;
@@ -1503,7 +1504,7 @@ justify-content: space-between;
             .container {
                 display: inline-block;
                 cursor: pointer;
-                padding-right: 10px;
+                padding-right: 0px;
               }
               
               .bar1, .bar2, .bar3 {
