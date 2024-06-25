@@ -11,6 +11,9 @@
     <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <div class="loader-container">
+      <span class="loader"> <img src="./images/golden-retriever-walking.gif"/></span>
+    </div>
     <div class="Wrapper">
       <div class="Header">
         <div class="Navbar">
@@ -146,7 +149,7 @@
           <div class="imagesec">
             <div class="container"  aos-duration="3000" data-aos="fade-up-left" >
               <div class="image-block">
-                <img src="./Video/Horse.gif" alt="" />
+                <img src="./Video//2second.gif" alt="" />
                 <div class="image-block__body"></div>
               </div>
             </div>
@@ -455,7 +458,16 @@ AOS.init({
 
 
 
-
+    document.addEventListener("DOMContentLoaded", function () {
+        
+        setTimeout(function () {
+           
+            document.body.classList.add('loaded');
+            
+    
+            document.querySelector('.content').style.display = 'block';
+        }, 2000); 
+    });
 
 
 
